@@ -56,10 +56,12 @@
             <RadioButton GroupName="schoolclass" Margin="2 4 2 2">b  osztály</RadioButton>
             <RadioButton GroupName="schoolclass" Margin="2 4 2 2">c  osztály</RadioButton>
         </StackPanel>
-        <ComboBox Grid.Row="6" Grid.Column="1" Margin="2 2 2 2"
-                 ItemsSource="{Binding EducationLevels}"
-                 SelectedItem="{Binding SelectedEducationLevel}"
-                 SelectedIndex="0">
+        <ComboBox 
+            Style="{DynamicResource FormComboBox}"
+            Grid.Row="6" Grid.Column="1" Margin="2 2 2 2"
+            ItemsSource="{Binding EducationLevels}"
+            SelectedItem="{Binding SelectedEducationLevel}"
+            SelectedIndex="0">
         </ComboBox>
         <DataGrid 
             Grid.Row="8" 
